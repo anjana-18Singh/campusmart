@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CampusMart - Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">CampusMart</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="subscription.html">Subscription</a></li>
+      <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="notes-container">
+    <h1>Manage Your Content</h1>
+
+    <!-- Notes Section -->
+    <div class="section">
+      <h2>📚 Notes</h2>
+      <input type="text" id="noteInput" placeholder="Enter a note">
+      <button onclick="addItem('notes')">Add Note</button>
+      <ul id="notesList"></ul>
+    </div>
+
+    <!-- Assignments Section -->
+    <div class="section">
+      <h2>📝 Assignments</h2>
+      <input type="text" id="assignmentInput" placeholder="Enter an assignment">
+      <button onclick="addItem('assignments')">Add Assignment</button>
+      <ul id="assignmentsList"></ul>
+    </div>
+
+    <!-- Placement Notes Section -->
+    <div class="section">
+      <h2>💼 Placement Notes</h2>
+      <input type="text" id="placementInput" placeholder="Enter placement note">
+      <button onclick="addItem('placements')">Add Placement Note</button>
+      <ul id="placementsList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

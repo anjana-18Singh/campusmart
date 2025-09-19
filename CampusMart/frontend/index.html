@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CampusMart - Login/Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-container">
+    <h2>Welcome to CampusMart</h2>
+    
+    <!-- Signup Form -->
+    <div id="signupBox" class="auth-box">
+      <h3>Signup</h3>
+      <input type="text" id="signupUser" placeholder="Enter username">
+      <input type="password" id="signupPass" placeholder="Enter password">
+      <!-- ✅ Added type="button" -->
+      <button type="button" onclick="signup()">Signup</button>
+      <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginBox" class="auth-box hidden">
+      <h3>Login</h3>
+      <input type="text" id="loginUser" placeholder="Enter username">
+      <input type="password" id="loginPass" placeholder="Enter password">
+      <!-- ✅ Added type="button" -->
+      <button type="button" onclick="login()">Login</button>
+      <p>New here? <a href="#" onclick="showSignup()">Signup now</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
